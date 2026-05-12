@@ -14,7 +14,42 @@ linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
 linear-gradient(135deg,#1a1a1a,#0f3d2e,#1f1f1f);
       color:white;
       overflow-x:hidden;
-    }
+    }.navbar{
+  width:100%;
+  padding:20px 40px;
+  position:fixed;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.3);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+  box-sizing:border-box;
+}
+
+.logo{
+  color:#f4c542;
+  font-size:28px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#f4c542;
+}
 .hero-content{
   display:flex;
   align-items:center;
