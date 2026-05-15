@@ -122,6 +122,20 @@ linear-gradient(135deg,#1a1a1a,#0f3d2e,#1f1f1f);
   margin:auto;
   line-height:1.9;
   position:relative;
+}.left-section{
+  margin-left:0;
+  margin-right:auto;
+}
+
+.right-section{
+  margin-left:auto;
+  margin-right:0;
+  text-align:right;
+}
+
+.right-section::before{
+  left:auto;
+  right:0;
 }
     }
 
@@ -261,7 +275,7 @@ linear-gradient(135deg,#1a1a1a,#0f3d2e,#1f1f1f);
 
 </div>
 
-<div class="section" id="about">
+<div class="section left-section" id="about">
   <h2>About The Author</h2>
     
 
@@ -282,7 +296,7 @@ linear-gradient(135deg,#1a1a1a,#0f3d2e,#1f1f1f);
   and emotional truth.
 </p>
   </div>
-<div class="section" id="reviews">
+<div class="section right-section" id="reviews">
   <h2>Stories That Leave Scars</h2>
   
 
@@ -291,7 +305,7 @@ linear-gradient(135deg,#1a1a1a,#0f3d2e,#1f1f1f);
     Every silence hides a truth.”
   </p>
 </div>
-  <div class="section" id="stories">
+  <div class="section left-section" id="stories">
   <h2>Featured Stories</h2>
     
 
@@ -300,7 +314,7 @@ linear-gradient(135deg,#1a1a1a,#0f3d2e,#1f1f1f);
       More cinematic stories coming soon.
     </p>
   </div>
-<div class="section" id="contact">
+<div class="section right-section" id="contact">
 
   <h2>Contact Ambee Ambrose</h2>
 
