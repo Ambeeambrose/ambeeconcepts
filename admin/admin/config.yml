@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: ambeeambrose/ambeeconcepts-author
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Website Pages"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "index.html"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
