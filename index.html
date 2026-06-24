@@ -360,6 +360,18 @@ linear-gradient(135deg,#1a1a1a,#0f3d2e,#1f1f1f);
   </p>
 
 </div>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
 </body>
 </html>
