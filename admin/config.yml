@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-publish_mode: editorial_workflow
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
@@ -13,4 +13,11 @@ collections:
         name: "homepage"
         file: "index.html"
         fields:
-          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "About the Author", name: "about_author", widget: "text" }
+          - { label: "Featured Stories", name: "featured_stories", widget: "text" }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Phone Number", name: "phone_number", widget: "string" }
+          - { label: "Facebook Link", name: "facebook_link", widget: "string" }
+          - { label: "Amazon Author Page", name: "amazon_author", widget: "string" }
